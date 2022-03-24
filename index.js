@@ -10,10 +10,9 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-//user: myDbuser1
-//password : XstmAD7ifTPa2Ha3
 
-const uri = "mongodb+srv://myDbuser1:XstmAD7ifTPa2Ha3@cluster0.ejh55.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
+const uri = "";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 async function run() {
     try {
